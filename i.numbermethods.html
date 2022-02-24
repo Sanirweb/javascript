@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Methods</title>
+</head>
+<body>
+
+
+    <script>
+        const x = 25.0009888
+        //toFixed( ) is usedto print how many number to display after point
+
+        document.write(`${x.toFixed(2)} <br>`)
+
+
+        //toPrecision() is used to show how many numbers to be printed as a whole
+
+        document.write(`${x.toPrecision(3)}  <br>`)
+
+        //to convert string to number : Number(), parseInt(), parseFloat()
+
+        //parseFloat() -> 3,4, 34.55
+        //pasrseInt() -> 34
+
+        const a = 5
+        const b= 7
+        const c= a+b 
+
+        document.write(`The result shoukd be like this ${c} <br>`)
+
+
+        const e = "5"
+        const f= "7"
+        const g = e+f //In string + is used to concatenate
+
+        document.write(`The result shoukd be like this ${g} <br>`)
+
+
+        const h= Number('hello')
+        document.write(`${h} <br>`)
+
+        const i= typeof(h)
+        document.write(`${i} <br>`)
+
+        const j = parseInt('25.9999')
+        document.write(`The result shoukd be like this ${j} <br>`)
+
+        const k = parseFloat('25.9999')
+        document.write(`The result shoukd be like this ${k} <br>`)
+
+
+
+
+    </script>
+    
+</body>
+</html>

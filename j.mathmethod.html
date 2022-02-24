@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Method</title>
+</head>
+
+<body>
+
+    <script>
+        const pi = Math.PI
+        document.write(`${pi.toFixed(4)} <br>`)
+
+        //squareroot -. sqrt()
+
+        document.write(`${Math.sqrt(25)} <br>`)
+
+        //for power -> pow
+
+        document.write(`${Math.pow(25, 2)} <br>`)
+
+        //roundup -> round()
+
+        document.write(`${Math.round(25.8)} <br>`)
+
+        //ceil -> always round up value doesn't depend on decimal value
+
+        document.write(`${Math.ceil(25.8)} <br>`)
+        document.write(`${Math.ceil(25.3)} <br>`)
+
+        //floor -> always round down the nearest integer
+        document.write(`${Math.floor(25.3)} <br>`)
+
+        document.write(`${Math.floor(25.9)} <br>`)
+
+        //random number -> it generate value between 0 and 1
+        document.write(`${Math.random(25.9)} <br>`)
+
+        //to convert random number from decimal to whole number
+
+        let rand_number = Math.floor(Math.random() * 20)
+
+        document.write(`${rand_number}<br>`)
+
+        let test_value = Math.floor(Math.random() * 20) + 1
+
+        document.write(`${test_value}<br>`)
+
+
+
+
+    </script>
+
+</body>
+
+</html>

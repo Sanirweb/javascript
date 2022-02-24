@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements
+
+    </title>
+</head>
+
+<body>
+
+    <pre>
+        i.      if...
+        ii.     if.. else.. 
+        iii.    if.. elseif... else
+        iv.     switch
+    </pre>
+
+
+
+    <script>
+
+        //using if
+        //To check odd or even number
+
+        const a = prompt('Enter the desired number: ')
+
+        if (a % 2 == 0) {
+            document.write(`${a} is a even number <br>`)
+        }
+
+        if (a % 2 == 1) {
+            document.write(`${a} is a odd number<br>`)
+        }
+
+
+        //Using if... else....
+
+        //To check leap year
+
+        const year = prompt('Enter the year which should be checked whether it is leap or not:')
+
+        //&& means all conditions should be fulfilled
+        //|| means any one condtion should be fulfilled
+
+        if (year % 4 == 0 && year%100!=0 || year % 400 == 0) {
+            document.write(`${year} is the leap year <br>`)
+
+        }
+
+        else {
+            document.write(`${year} isnot the leap year <br>`)
+
+        }
+
+
+
+        //Using else if
+
+        const x = 20 
+        const y = 15
+
+        if(x>y){
+            document.write(`${x} is greater than ${y}`)
+
+        }
+
+        else if(x<y){
+            document.write(`${y} is greater than ${x}`)
+
+        }
+        else {
+            document.write(`${y} and ${x} are equal`)
+
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+
+
+    <button id="btn">Click</button>
+    <p id="result"></p>
+
+    <Script>
+
+        
+
+        const my_demo =() =>{
+            document.getElementById('result').innerHTML = new Date()
+        }
+
+        const my_btn = document.getElementById('btn')
+        my_btn.addEventListener('click', my_demo)
+    </Script>
+    
+</body>
+</html>

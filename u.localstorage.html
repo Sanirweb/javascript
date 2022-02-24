@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local storage</title>
+</head>
+
+<body>
+
+    <script>
+        localStorage.setItem('javascript', 'we are storing in the browser applicaion')
+
+        const show = localStorage.getItem('javascript')
+        document.write(show)
+
+
+        // //session storage
+        // sessionStorage.setItem('session', 'It will be deleted after logout')
+
+        // const display = sessionStorage.getItem('Session')
+        // document.write(display)
+
+
+        //JSON- Javascript object notation
+
+        let student_details = {
+            'first_name': 'Ram',
+            'last_name': 'KC',
+            'subjects': ['html', 'css', 'bootstrap']
+
+
+
+        }
+        
+        // localStorage.setItem('students', student_details)
+
+        const obj_to_str = JSON.stringify(student_details)
+
+        localStorage.setItem('student', obj_to_str)
+
+        const data = localStorage.getItem('student')
+        console.log(data)
+        // console.log(data.first_name)
+
+        //to convert string into object
+
+        const str_to_obj = JSON.parse(data)
+        console.log(str_to_obj)
+        console.log(str_to_obj.first_name)
+
+    </script>
+
+</body>
+
+</html>

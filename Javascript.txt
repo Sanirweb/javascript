@@ -1,0 +1,17 @@
+Javascript
+
+Programming langaugae of Web
+Similar to c programming
+
+Main topics
+Operator, Varirable Loop, Array, Array iteration, 
+function, arrow function, conditional statement, 
+DOM, ecma script(promise, async/await,let/const),
+event handling, JSON, local storage and session storage, regular expression and form validation, data types
+
+
+library for frontend
+React.js
+
+Framework for backend
+Node.js and express js

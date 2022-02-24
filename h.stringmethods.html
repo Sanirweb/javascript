@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+
+    <script>
+        const my_text = 'Welcome to My Javascript sting to methods  web'
+
+        document.write(`${my_text} <br>`)
+
+        //To count length of string
+
+        document.write(`${my_text.length} <br> `)
+
+        //to find position of string in whole string  use indexOf()
+
+        document.write(`${my_text.indexOf('to')} <br>`)
+
+
+        //to find position of last string in whole string  if repeated use lastIndexOf()   
+        //after ending one function if another attach it is called camel
+
+        document.write(`${my_text.lastIndexOf('to')} <br>`)
+
+
+        //to replace the string with another string use replace
+
+        document.write(`${my_text.replace('Javascript', 'Sanir')} <br>`)
+
+        //to replace all the similar string use replaceAll
+
+        document.write(`${my_text.replace(/to/g, 'too')} <br>`)
+
+
+        //with regular expression and i we can make insensitive
+
+        document.write(`${my_text.replace(/WEB/i, 'Internet')} <br>`)
+
+        //substring -> certain part of string 
+        //slice(start,end) => (5,10)  5 dekhi 10 samma
+        //substring(start,end)
+        //substr(start,length) => 5 bata suru ani tespachi 10ota
+
+        document.write(`${my_text.slice(0,20)}........<br>`)
+
+        document.write(`${my_text.substr(10,30)}..... <br>`)
+
+
+        //concat()
+        //charAt()
+        //charCodeAt()
+        //split()
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

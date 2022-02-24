@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use value from form</title>
+</head>
+<body>
+    <div class="abc" style="text-align: center; background-color: black; color: white; margin-left: 30%; margin-right: 30%; margin-top: 10%; padding: 30px;">
+
+    <h1>To Check The Greatest Number</h1>
+        <p>Enter First Number:</p> 
+        <input type="number" id="first">
+
+        <p>Enter Second number:</p>
+        <input type="number" id="second"> <br> <br>
+
+        <button onclick="compare()">Submit</button>
+
+        <p id="result"></p>
+    </div>
+    
+
+    <script>
+        const compare= () =>{
+            const a = document.getElementById('first').value
+        const b = document.getElementById('second').value
+
+        if(a>b){
+            document.getElementById('result').innerHTML= (`${a} is the greatest value`)
+        }
+
+        else if(b>a){
+            document.getElementById('result').innerHTML= (`${b} is the greatest value`)
+        }
+
+        else{
+            document.getElementById('result').innerHTML= (`${a} is the equal to value of ${b}`)
+        }
+
+        }
+
+        
+
+    </script>
+    
+</body>
+</html>
